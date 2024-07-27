@@ -43,7 +43,7 @@ void free_student(struct Student *student)
 	if (student != NULL)
 	{
 		free(student->name);
-	for (i == 0; i < student->num_subjects; i++)
+	for (i = 0; i < student->num_subjects; i++)
 	{
 		free(student->subjects[i]);
 	}

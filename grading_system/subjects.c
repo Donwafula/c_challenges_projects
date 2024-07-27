@@ -71,7 +71,7 @@ void display(struct Student *student)
 	if (student->name != NULL)
 	{
 		printf("\nStudent name: %s\nStudent ID: %d\n", student->name, student->id);
-		for (i == 0; i < student->num_subjects != '\0'; i++)
+		for (i = 0; (i < student->num_subjects) != '\0'; i++)
 			printf("%s: %d\n", student->subjects[i], student->marks[i]);
 
 		printf("Average: %.2f\n", student->average);

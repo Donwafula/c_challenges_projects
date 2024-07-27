@@ -55,6 +55,8 @@ int s_ID(struct Student *student)
  */
 void get_subjects(struct Student *student)
 {
+	int i = 0;
+
 	printf("Enter number of subjects taken by the student: ");
 	scanf("%d", &(student->num_subjects));
 	/*printf("%d\n", student->num_subjects);*/
@@ -65,8 +67,6 @@ void get_subjects(struct Student *student)
 		printf("Error allocating memory to subjects\n");
 		return;
 	}
-
-	int i = 0;
 
 	for (i = 0; i < student->num_subjects; i++)
 	{
